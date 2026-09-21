@@ -585,6 +585,40 @@
       line-height: 1.5;
     }
 
+    /* AI TRANSPARENCY */
+
+    .ai-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .ai-card {
+      padding: 21px 24px;
+      border: 1px solid rgba(255, 255, 255, 0.96);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: var(--shadow);
+    }
+
+    .ai-card h3 {
+      margin-bottom: 8px;
+      color: var(--blue-dark);
+      font-size: 18px;
+    }
+
+    .ai-card.purple h3 {
+      color: #7356be;
+    }
+
+    .ai-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
     /* REFERENCES */
 
     .references {
@@ -696,7 +730,8 @@
       .gallery,
       .gallery.two,
       .case-grid,
-      .concepts {
+      .concepts,
+      .ai-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1094,6 +1129,7 @@
 
 
     <!-- 07 — CASE SELECTION: SHARED CONTEXT -->
+    <!-- UNCHANGED -->
 
     <section class="slide" data-title="Case selection: shared context">
       <div class="container">
@@ -1147,6 +1183,7 @@
 
 
     <!-- 08 — CASE SELECTION: WHY THE COMPARISON MATTERS -->
+    <!-- UNCHANGED -->
 
     <section class="slide" data-title="Case selection: comparison">
       <div class="container">
@@ -1593,13 +1630,14 @@
     </section>
 
 
-    <!-- 17 — POSITIONALITY -->
+    <!-- 17 — RESEARCHER POSITIONALITY -->
+    <!-- SEPARATE SLIDE -->
 
     <section class="slide" data-title="Researcher positionality">
       <div class="container">
 
         <div class="eyebrow">
-          Research transparency · 1/3
+          Research transparency · 1/2
         </div>
 
         <h2>
@@ -1625,7 +1663,8 @@
               I will use open-ended questions
               and reflexive notes to consider
               how my background and participants’
-              assumptions may shape the interviews.
+              assumptions may shape the interviews
+              and my interpretation of them.
             </p>
           </div>
 
@@ -1635,37 +1674,56 @@
     </section>
 
 
-    <!-- 18 — AI TRANSPARENCY -->
+    <!-- 18 — AI TRANSPARENCY + REFLECTION -->
+    <!-- BOTH TOPICS ON ONE SLIDE -->
 
-    <section class="slide" data-title="AI transparency">
+    <section class="slide" data-title="AI transparency and reflection">
       <div class="container">
 
         <div class="eyebrow">
-          Research transparency · 2/3
+          Research transparency · 2/2
         </div>
 
         <h2>
-          How I used
+          Working with
           <span class="gradient-text">AI</span>
         </h2>
 
-        <div class="cards">
+        <div class="ai-grid">
 
-          <div class="card">
-            <h3>Where AI helped</h3>
+          <div class="ai-card">
+            <h3>How AI helped</h3>
             <p>
-              AI helped me refine the wording of my research
-              question, organize the literature, and improve
-              the presentation’s structure and design.
+              AI helped me refine my research question,
+              organize the literature and improve
+              the presentation’s design.
             </p>
           </div>
 
-          <div class="card purple">
+          <div class="ai-card purple">
             <h3>What remained my work</h3>
             <p>
-              I reviewed the sources myself, evaluated AI’s
-              suggestions, and made the final decisions
-              about my research question and design.
+              I reviewed the sources, assessed
+              AI’s suggestions and made the final
+              research decisions myself.
+            </p>
+          </div>
+
+          <div class="ai-card">
+            <h3>What I understand better now</h3>
+            <p>
+              My focus is on citizens’ interpretations
+              of commemorative symbols, not simply
+              their opinions of former presidents.
+            </p>
+          </div>
+
+          <div class="ai-card purple">
+            <h3>What remains unresolved</h3>
+            <p>
+              How to conduct feasible interviews
+              in both countries while keeping
+              the comparison meaningful.
             </p>
           </div>
 
@@ -1675,48 +1733,7 @@
     </section>
 
 
-    <!-- 19 — REFLECTION ON WORKING WITH AI -->
-
-    <section class="slide" data-title="Reflection on AI">
-      <div class="container">
-
-        <div class="eyebrow">
-          Research transparency · 3/3
-        </div>
-
-        <h2>
-          What I learned —
-          <span class="gradient-text">and what remains unclear</span>
-        </h2>
-
-        <div class="cards">
-
-          <div class="card">
-            <h3>What AI helped me understand</h3>
-            <p>
-              My study should explore how citizens
-              interpret commemorative symbols,
-              rather than measure their attitudes
-              toward former presidents.
-            </p>
-          </div>
-
-          <div class="card purple">
-            <h3>What I still need to work out</h3>
-            <p>
-              How to make interviews in both countries
-              feasible while keeping the comparison
-              meaningful and balanced.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <!-- 20 — REFERENCES -->
+    <!-- 19 — REFERENCES -->
 
     <section class="slide" data-title="References">
       <div class="container">
